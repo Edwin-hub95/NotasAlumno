@@ -92,6 +92,68 @@ public class Ingresonota {
                  ListAlumno.add(new Alumno(id,nombre,parcialUno,parcialDos,zona,examenFinal));
                  
     } 
-    }
+     public static void modificardatos() {
+         int cambio;
+                 int indice=0;
+                 System.out.println("cual es tu numero de carne");
+                 cambio=leer.nextInt();
+                 for (Alumno alumno : ListAlumno) {
+                     if(alumno.getId()==cambio){
+                         int seleccionar;
+                         System.out.println("que desea cambiar");
+                         System.out.println("opcion 1 cambiar nombre");
+                         System.out.println("opcion 2 cambiar parcialUno");
+                         System.out.println("opcion 3 cambiar parcialDos");
+                         System.out.println("opcion 4 zona");
+                         System.out.println("opcion 5 cambiar examenFinal");
+                         seleccionar=leer.nextInt();
+                         switch(seleccionar){
+                             case 1:
+                                 System.out.println("cambiar nombre");
+                                 nombre=leer.next();
+                                 ListAlumno.get(indice).setNombre(nombre);
+                                 break;
+                                 
+                             case 2:
+                                 System.out.println("cambiar parcialUno");
+                                 parcialUno=leer.nextDouble();
+                                 ListAlumno.get(indice).setParcialUno(parcialUno);
+                                 ListAlumno.get(indice).setTotal(alumno.getParcialUno()+alumno.getParcialDos()+alumno.getZona()+alumno.getExamenFinal());
+                                 break;
+                                 
+                             case 3:
+                                 System.out.println("cambiar parcialDos");
+                                 parcialDos=leer.nextDouble();
+                                 ListAlumno.get(indice).setParcialDos(parcialDos);
+                                 ListAlumno.get(indice).setTotal(alumno.getParcialUno()+alumno.getParcialDos()+alumno.getZona()+alumno.getExamenFinal());
+                                 break;
+                                  
+                             case 4:
+                                 System.out.println("cambiar zona");
+                                 zona=leer.nextDouble();
+                                 ListAlumno.get(indice).setZona(zona);
+                                 ListAlumno.get(indice).setTotal(alumno.getParcialUno()+alumno.getParcialDos()+alumno.getZona()+alumno.getExamenFinal());
+                                 break;
+                                 
+                             case 5:
+                                 System.out.println("cambiar examenFinal");
+                                 examenFinal=leer.nextDouble();
+                                 ListAlumno.get(indice).setExamenFinal(examenFinal);
+                                 ListAlumno.get(indice).setTotal(alumno.getParcialUno()+alumno.getParcialDos()+alumno.getZona()+alumno.getExamenFinal());
+                                 break; 
+                             
+                         }
+                     }
+                   indice++;  
+                 }
+                 
+                 
+                 
+                 
+                 
+            
+         }
+    }        
+    
     
 
