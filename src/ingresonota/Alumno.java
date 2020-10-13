@@ -32,7 +32,7 @@ public class Alumno {
     }
 
     Alumno(int id, String nombre, double parcialUno, double parcialDos, double zona, double examenFinal, double total) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        
     }
 
     
