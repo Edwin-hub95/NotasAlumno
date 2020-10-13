@@ -14,6 +14,7 @@ import java.util.Scanner;
  * Edwin Alfonso Mejia Concogua 2000259
  * Adolfo Emanuel Zepeda Medina 2000135
  * Ana Nohemi Aguilar 2000316
+ * Maria Mercedes Mendoza Gomez 2000086
  */
 public class Ingresonota {
    public static int id;
