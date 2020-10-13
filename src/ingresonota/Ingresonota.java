@@ -12,6 +12,7 @@ import java.util.Scanner;
 /**
  *
  * Edwin Alfonso Mejia Concogua 2000259
+ * Adolfo Emanuel Zepeda Medina 2000135
  */
 public class Ingresonota {
 
